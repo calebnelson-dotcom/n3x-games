@@ -62,7 +62,7 @@ var apps = [
     },
     {
       'id': 'p-stream',
-      'title': 'P-Stream',
+      'title': 'P-Stream (may not work)',
       'url': 'https://pstream.mov/',
       'image': 'https://avatars.githubusercontent.com/u/191057509?s=200&v=4'
     },
@@ -72,12 +72,6 @@ var apps = [
       'description': 'Please dont have any personal information or use a personal password on this website',
       'url': 'https://palyra.vercel.app',
       'image': 'https://palyra.vercel.app/images/icon.png'
-    },
-    {
-      'id': 'spenflix',
-      'title': 'Spenflix',
-      'url': 'https://watch.spencerdevs.xyz',
-      'image': 'https://frogiesarcade.win/stuff/apps/movies.jpg'
     },
   ]
 
