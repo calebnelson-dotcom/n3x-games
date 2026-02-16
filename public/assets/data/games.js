@@ -211,7 +211,7 @@ var games = [
   {
     id: 'geometrydashsubzero',
     title: 'Geometry Dash SubZero',
-    url: 'https://1games.io/game/geometry-dash-subzero/',
+    url: 'https://geometry-dashsubzero.com/geometry-dash-subzero.embed',
     image: 'https://img.utdstc.com/icon/b78/b46/b78b4624b14ac389631cb2b7ee2579f583101fb8559c8a0c36f742a393da0e31:200'
   },
   {
