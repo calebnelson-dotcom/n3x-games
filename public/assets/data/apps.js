@@ -76,7 +76,7 @@ var apps = [
     {
       'id': 'spenflix',
       'title': 'Spenflix',
-      'url': 'https://frogiesarcade.win/frog/ixl/hvtrs8%2F-wctah%2Csrelcgrfets%2Cx%7Bz-',
+      'url': 'https://watch.spencerdevs.xyz/',
       'image': 'https://frogiesarcade.win/stuff/apps/movies.jpg'
     },
   ]
