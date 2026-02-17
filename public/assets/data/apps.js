@@ -71,7 +71,7 @@ var apps = [
     id: "spenflix",
     title: "Spenflix",
     description: "mid movie player",
-    url: "https://frogiesarcade.win/embed.html#https://watch.spencerdevs.xyz/",
+    url: "https://watch.spencerdevs.xyz/",
     image: "https://frogiesarcade.win/stuff/apps/movies.jpg"
   }
   ]
