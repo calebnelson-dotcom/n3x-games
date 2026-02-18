@@ -99,13 +99,6 @@ var apps = [
        description: "make SURE to test all servers, #3 works and refresh page if you get an error when clicking",
        url: "https://vidplay.top/",
        image: "https://vidplay.top/fav-512.png"
-  },
-  {
-       id: "filmex",
-       title: "Filmex",
-       description: "make SURE to test all servers, this may take long to load and prolly doesnt work",
-       url: "https://filmex.to/",
-       image: "https://image.xumo.com/v1/channels/channel/99951120/600x600.webp?type=color_onBlack"
   }
   ]
 
