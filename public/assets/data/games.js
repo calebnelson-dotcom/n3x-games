@@ -59,7 +59,7 @@ var games = [
     title: 'Steal a Brainrot',
     description: 'Steal a Brainrot is a 2025 multiplayer video game developed by SpyderSammy (also known as Sammy). In the game, players buy and steal Brainrots, characters based on the Italian brainrot meme, which generate income over time.',
     url: 'https://db.duckmath.org/html/steal_a_brainrot_2/',
-    image: 'https://tr.rbxcdn.com/180DAY-7f4eecc799f207181e38fff7122b73fa/768/432/Image/Webp/noFilter'
+    image: 'https://cdn.jsdelivr.net/gh/mathlesson/mathlesson.github.io/img/steal-a-brainrot.jpg'
   },
   {
     id: 'crazycattle3d',
@@ -401,3 +401,4 @@ if (customgames) customgames.forEach(game => {
 
 console.log("Loaded " + games.length + " games")
 if (customgames) console.log("Loaded " + customgames.length + " custom games")
+
