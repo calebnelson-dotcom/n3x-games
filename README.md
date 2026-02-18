@@ -20,4 +20,4 @@ npm start # Start the bare server + serve static files
 ````
 
 ## About us 
-## This project has been forked by Art Class v4 and has been heavily tweaked by chatgpt and skidding. Cr to frogies for the original idea, art class for forking it and being the base of our project and Truffled.lol since our design is inspired from them.
+## This project has been forked by Art Class v4 and has been heavily tweaked by chatgpt and skidding. Cr to frogies for the original idea, art class for forking it and being the base of our project and Truffled.lol since our design is inspired from them. Thanks to the ultimate game stash where you can find the link in /assets/games and then any html file!
