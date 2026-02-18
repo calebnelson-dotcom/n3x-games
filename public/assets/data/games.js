@@ -59,7 +59,7 @@ var games = [
     title: 'Steal a Brainrot',
     description: 'Steal a Brainrot is a 2025 multiplayer video game developed by SpyderSammy (also known as Sammy). In the game, players buy and steal Brainrots, characters based on the Italian brainrot meme, which generate income over time.',
     url: 'https://db.duckmath.org/html/steal_a_brainrot_2/',
-    image: 'https://sm.ign.com/ign_nordic/cover/s/steal-a-br/steal-a-brainrot-roblox_4pvv.jpg'
+    image: 'https://tr.rbxcdn.com/180DAY-7f4eecc799f207181e38fff7122b73fa/768/432/Image/Webp/noFilter'
   },
   {
     id: 'crazycattle3d',
@@ -126,10 +126,10 @@ var games = [
   },
   {
     id: 'papaburgers',
-    title: 'Papa's Burgeria',
+    title: 'Papa\'s Burgeria',
     description: 'Take customer orders, grill patties, and build perfect burgers in this fast-paced restaurant management game.',
     url: 'https://papasgamesfree.io/play/papas-burgeria/',
-    image: 'https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=1200,height=1200,fit=cover,f=png/4fad37685af404ca0f987d927358ab79/papas-burgeria.jfif'
+    image: 'https://i.flipline.com/gamefiles/papasburgeriatogo/app_upsell_C.jpg'
   },
   {
     id: 'papasicecream',
