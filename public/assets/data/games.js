@@ -37,7 +37,7 @@ var games = [
     id: 'spacewaves',
     title: 'Space Waves',
     description: 'Space Waves is a fast-paced rhythm platformer where you fly, and dodge deadly obstacles in sync with energetic music. Simple controls, unlimited levels, and intense challenges make it easy to play—but hard to master.',
-    url: 'https://spacewavesgame.io/game/space-waves/',
+    url: 'https://games.crazygames.com/en_US/space-waves/index.html?isNewUser=false&v=1.351',
     image: 'https://crazygames.cdn.msnfun.com/9nm5764dbppg/v8/logo.png'
   },
   {
@@ -345,5 +345,6 @@ if (customgames) customgames.forEach(game => {
 
 console.log("Loaded " + games.length + " games")
 if (customgames) console.log("Loaded " + customgames.length + " custom games")
+
 
 
