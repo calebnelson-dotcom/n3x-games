@@ -9,7 +9,7 @@ var games = [
     id: 'rocketleague',
     title: 'Rocket League',
     description: 'A high-speed soccer game with rocket-powered cars. Score goals, perform aerial tricks, and compete in fast-paced matches.',
-    url: 'https://glcdn.githack.com/kaioxdev/legacy-assets/-/raw/main/Rocket-League/index.html',
+    url: 'https://rocketsoccerderby.gitlab.io/file/',
     image: 'https://www.softgozar.com/Image/Softwares/Thumbnail/Rocket_League_Anniversary_SoftGozar.com.png'
   },
   {
@@ -23,21 +23,21 @@ var games = [
     id: 'bowmasters',
     title: 'Bowmasters',
     description: 'If you like exciting shooting games, gun games, especially archery games, join the fun and unique battles in the action game Bowmasters!',
-    url: 'https://html5.gamemonetize.co/5mkmynq4be442ueej5j4l6pommnieubj/',
+    url: 'https://html5.gamedistribution.com/rvvASMiM/f1f71329bb6e4fbb97bfdc0ad14edafe/index.html?gd_sdk_referrer_url=https%3A%2F%2Fwww.pog.com%2Fgames%2Fbowmasters&key=pog&value=default&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3d3dy5wb2cuY29tL2dhbWVzL2Jvd21hc3RlcnMiLCJwYXJlbnREb21haW4iOiJwb2cuY29tIiwidG9wRG9tYWluIjoicG9nLmNvbSIsImhhc0ltcHJlc3Npb24iOmZhbHNlLCJsb2FkZXJFbmFibGVkIjp0cnVlLCJob3N0IjoiaHRtbDUuZ2FtZWRpc3RyaWJ1dGlvbi5jb20iLCJ2ZXJzaW9uIjoiMS41LjE4In0%253D',
     image: 'https://play-lh.googleusercontent.com/rsQyCuie6S8Munc2Hv6IMpePP1g3c0okLkyKRXd1IimOryIBMZqymGKaOg7bZ6NMkhj3'
   },
   {
     id: 'geometrydashworld',
     title: 'Geometry Dash World',
     description: 'Geometry Dash World is a fast-paced rhythm platformer where you jump, fly, and dodge deadly obstacles in sync with energetic music. Simple controls, vibrant levels, and intense challenges make it easy to play—but hard to master.',
-    url: 'https://lolygames.github.io/gd-world/',
+    url: 'https://1games.io/game/geometry-dash-world/',
     image: 'https://play-lh.googleusercontent.com/eu0Lv1QtDbCdVvuphJh84zxKNURIEcXjmZPhAv4NM4Xacfjum9TspfYkzRcBKv4zpDk'
   },
   {
     id: 'spacewaves',
     title: 'Space Waves',
     description: 'Space Waves is a fast-paced rhythm platformer where you fly, and dodge deadly obstacles in sync with energetic music. Simple controls, unlimited levels, and intense challenges make it easy to play—but hard to master.',
-    url: 'https://crazygames.cdn.msnfun.com/9nm5764dbppg/v8/index.html?msstart_sdk_init=eyJwYXJlbnRPcmlnaW4iOiJodHRwczovL3d3dy5tc24uY29tIiwiY2xpZW50SWQiOiIyRTRDODk1Q0RFMzE2QUE1MzBCNDlGQTNERjg1NkJGQiIsImxvY2FsZSI6ImVuLXVzIiwiZW50cnlQb2ludElkIjoiIiwic3dpdGNoR2FtZVBheWxvYWQiOnsic3dpdGNoZWRUbyI6IjlubTU3NjRkYnBwZyIsInZhbHVlIjp7fX19',
+    url: 'https://spacewavesgame.io/game/space-waves/',
     image: 'https://crazygames.cdn.msnfun.com/9nm5764dbppg/v8/logo.png'
   },
   {
@@ -51,14 +51,14 @@ var games = [
     id: 'burritobison',
     title: 'Burrito Bison',
     description: 'Stolen by an evil chef, Burrito Bison seeks out his cookbook to take back with him to make the finest salsa in the world. So strap on your rocket belt, and launch your way to glory! Features: *Three powerful wrestlers: Burrito Bison now gets to adventure with friends!',
-    url: 'https://frogiesarcade.win/stuff/selfhosted/burrito-bison/',
+    url: 'https://www.silvergames.com/en/burrito-bison/gameframe',
     image: 'https://play-lh.googleusercontent.com/vpTgm9u7-GzZP_MceTWpDi0HbinXd_4phCoTwf4ZspFL-115FtNRdo_SU1p-khLDnLA'
   },
   {
     id: 'stealabrainrot',
     title: 'Steal a Brainrot',
     description: 'Steal a Brainrot is a 2025 multiplayer video game developed by SpyderSammy (also known as Sammy). In the game, players buy and steal Brainrots, characters based on the Italian brainrot meme, which generate income over time.',
-    url: 'https://db.duckmath.org/html/steal_a_brainrot_2/',
+    url: 'https://crazygames.cdn.msnfun.com/9pltx207s22g/v6/index.html?msstart_sdk_init=eyJwYXJlbnRPcmlnaW4iOiJodHRwczovL3d3dy5tc24uY29tIiwiY2xpZW50SWQiOiIyRTRDODk1Q0RFMzE2QUE1MzBCNDlGQTNERjg1NkJGQiIsImxvY2FsZSI6ImVuLXVzIiwiZW50cnlQb2ludElkIjoiIiwic3dpdGNoR2FtZVBheWxvYWQiOnsic3dpdGNoZWRUbyI6IjlwbHR4MjA3czIyZyIsInZhbHVlIjp7fX19',
     image: 'https://cdn.jsdelivr.net/gh/mathlesson/mathlesson.github.io/img/steal-a-brainrot.jpg'
   },
   {
@@ -67,13 +67,6 @@ var games = [
     description: 'Crazy Cattle 3D is a hilarious survival game where you control explosive sheep! Bump rivals, dodge hazards, and become the last sheep standing.',
     url: 'https://crazycattle3donline.io/crazy-cattle-3d.embed',
     image: 'https://img.itch.zone/aW1nLzIwNzkwNDg0LnBuZw==/315x250%23c/O5flR4.png'
-  },
-  {
-    id: 'cookieclicker2',
-    title: 'Cookie Clicker 2',
-    description: 'Cookie Clicker is an addictive incremental game where players click to produce cookies, unlock upgrades, and aim to amass an ever-growing mountain of delicious digital treats. IF YOU WANT TO SAVE PRESS OPTIONS THEN PRESS SAVE OR IT WILL NOT SAVE! unless you wait 60 seconds.',
-    url: 'https://games-online.io/game/cake-maker/',
-    image: 'https://play-lh.googleusercontent.com/qiTKdSxk5XUk6MGJj1r-dMwXwd5Mx-rR3xQNB339OdxwXzFeqMXceMjpkK3316fMAw'
   },
   {
     id: 'cookieclicker',
@@ -107,7 +100,7 @@ var games = [
     id: 'cuttherope',
     title: 'Cut the Rope',
     description: 'Solve physics-based puzzles by cutting ropes at the right time to feed candy to the adorable monster, Om Nom.',
-    url: 'https://games.cdn.famobi.com/html5games/c/cut-the-rope/v100/?fg_domain=play.famobi.com&fg_aid=A-MYSTEINBACH&fg_uid=4531b37c-a8e0-4a67-9ebd-e8d3190b6277&fg_pid=78aa555f-8907-4158-8ca3-a4257bc1d34d&fg_beat=883&original_ref=https%3A%2F%2Fwww.mysteinbach.ca%2F',
+    url: 'https://play.gamepix.com/cut-the-rope/embed?sid=6HLOM',
     image: 'https://play-lh.googleusercontent.com/8FNcAyLXtQB_0Ux2ZO8VZoEoihL6a5VMBNf6V2lydRM24hXLnNUdlEup1d5miVjl3JY'
   },
   {
@@ -120,7 +113,7 @@ var games = [
   {
     id: 'backrooms',
     title: 'Backrooms',
-    description: 'Scary game based on the viral 4Chan post.',
+    description: 'Scary game based on the viral 4Chan post.Only works with a keyboard',
     url: 'https://backroomsgame.io/game/backrooms/',
     image: 'https://media.wired.com/photos/627b0c1fb6048c47d506c6c0/1:1/w_679,h_679,c_limit/Backrooms-Games.jpg'
   },
@@ -128,7 +121,7 @@ var games = [
     id: 'papaburgers',
     title: 'Papa\'s Burgeria',
     description: 'Take customer orders, grill patties, and build perfect burgers in this fast-paced restaurant management game.',
-    url: 'https://papasgamesfree.io/play/papas-burgeria/',
+    url: 'https://www.friv.com/z/assets/scripts/ruffle-251020/flashloader.html?papasburgeria-papasburgeria!4399.com!freedist-640-480',
     image: 'https://i.flipline.com/gamefiles/papasburgeriatogo/app_upsell_C.jpg'
   },
   {
@@ -147,17 +140,10 @@ var games = [
   },
   {
     id: 'plantsvszombies',
-    title: 'Plants Versus Zombies 1.0',
-    description: 'Plants Versus Zombies 1.0 is a tower defense video game where players strategically plant a variety of plants to fend off waves of zombie invaders.',
+    title: 'Plants Versus Zombies',
+    description: 'Plants Versus Zombies is a tower defense game where the player has to use plants with different abilities to defend their home against a zombie invasion',
     url: 'https://glcdn.githack.com/kaioxdev/legacy-assets/-/raw/main/plants%20vs%20zombies%201/plants%20vs%20zombies.html',
     image: 'https://upload.wikimedia.org/wikipedia/en/d/da/Plants_vs_Zombies_logo.png'
-  },
-  {
-    id: 'happywheels',
-    title: 'Happy Wheels',
-    description: 'A physics-based obstacle course game filled with crazy characters, dangerous traps, and hilarious ragdoll moments.',
-    url: 'https://html5.gamedistribution.com/rvvASMiM/55084fdaacba49cbaeeead2464733b72/index.html?gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2hhcHB5LXdoZWVscy5jby8iLCJwYXJlbnREb21haW4iOiJoYXBweS13aGVlbHMuY28iLCJ0b3BEb21haW4iOiJoYXBweS13aGVlbHMuY28iLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xOCJ9',
-    image: 'https://play-lh.googleusercontent.com/SV8RsV5udSeeONjatT5SwleP6lzV6PjtNPs2VvyohJXWSG9fFLNOfslDEHbpDN337wQ'
   },
   {
     id: 'fnf',
@@ -219,7 +205,7 @@ var games = [
     id: 'escapeprison',
     title: 'Henry Stickmin: Escaping the Prison',
     description: 'Choose hilarious options and clever strategies to help Henry Stickmin escape from prison successfully.',
-    url: 'https://games.crazygames.com/en_US/escaping-the-prison/index.html?isNewUser=false&v=1.350',
+    url: 'https://games3.startgamer.ru/escaping_the_prison/',
     image: 'https://play-lh.googleusercontent.com/MKW0yzbpA-faDMztP2xkirlXsHwL7QutC_9VyQlbr4VTbPOyCZInL7zYG9EA4XpX4mtM'
   },
   {
@@ -247,21 +233,21 @@ var games = [
     id: 'slope',
     title: 'Slope',
     description: 'Roll a ball down a fast-moving neon slope while avoiding obstacles and trying not to fall off the edge.',
-    url: 'https://mathadventure1.github.io/slope/slope/index.html',
+    url: 'https://slopeonline.online/xlope-game.embed',
     image: 'https://play-lh.googleusercontent.com/uJn2i9h7KxYQarC_c3K4qH6o7gLtflFnhD_dN14MNkzHJ1NeNFzCL69jpB5mT0vCoQs'
   },
   {
     id: 'baldisbasics',
     title: 'Baldi\'s Basics',
     description: 'A horror-comedy school game where you solve math problems and avoid Baldi roaming the halls.',
-    url: 'https://kdata1.com/5000/2025/baldi-s-basics-webgl/',
+    url: 'https://frogiesarcade.win/stuff/selfhosted/baldis-basics/',
     image: 'https://frogiesarcade.win/stuff/games/baldi.png'
   },
   {
     id: 'buildnowgg',
     title: "Buildnow.gg",
     description: 'A fast-paced online shooting and building game inspired by battle royale mechanics and competitive arenas.',
-    url: 'https://soulpeacemind.com/games/buildnow-gg-gpotty/',
+    url: 'https://games.crazygames.com/en_US/buildnow-gg/index.html?isNewUser=false&v=1.345',
     image: 'https://play-lh.googleusercontent.com/MdtXwEOt43tY6GV3-IHAwhdmoW-jY4B1rqvA0m1Yj89Bj4et8FfWGL3cCt_lkDvWbWk'
   },
   {
@@ -289,21 +275,21 @@ var games = [
     id: 'geometrydash',
     title: 'Geometry Dash',
     description: 'Jump and fly through rhythm-based obstacle courses filled with spikes and hazards set to energetic music.',
-    url: 'https://geometrylitegame.org/game/geometry-dash-lite/',
+    url: 'https://frogiesarcade.win/stuff/selfhosted/gdlite/',
     image: 'https://frogiesarcade.win/stuff/games/geodash.png'
   },
   {
     id: 'geometrydashsubzero',
     title: 'Geometry Dash SubZero',
     description: 'A winter-themed version of Geometry Dash featuring intense new levels and music tracks.',
-    url: 'https://geometry-dashsubzero.com/geometry-dash-subzero.embed',
+    url: 'https://geometrylitegame.org/geometry-dash-subzero.embed',
     image: 'https://img.utdstc.com/icon/b78/b46/b78b4624b14ac389631cb2b7ee2579f583101fb8559c8a0c36f742a393da0e31:200'
   },
   {
     id: '8ballpool',
     title: '8 Ball Pool',
     description: 'Challenge players in realistic 8-ball pool matches and show off your cue skills.',
-    url: 'https://8ball-pool.io',
+    url: 'https://prod-web-pool.miniclip.com/mc?localmc',
     image: 'https://play-lh.googleusercontent.com/bPz1guJ6FHF3oIOEy3KqwpaDDKO-hLRaZoyzmM8bLFLN8fWm6L0_EuUnkwv9iqPo3Ag'
   },
   {
@@ -316,7 +302,7 @@ var games = [
   {
     id: 'bloxorz',
     title: 'Bloxorz',
-    description: 'Roll a rectangular block across platforms and drop it perfectly into the square hole to complete each puzzle.',
+    description: 'Roll a rectangular block across platforms and drop it perfectly into the square hole to complete each puzzle. Only works if you got a keyboard',
     url: 'https://classroom8.github.io/bloxorz/',
     image: 'https://play-lh.googleusercontent.com/FHpA3r3FHDzVNtBpjpi9Zq8JA81bvRXBEbdkBvL3COOucsMfn_fYYhEFE5g55VkeSQ'
   },
@@ -324,14 +310,14 @@ var games = [
     id: 'basketballstars',
     title: 'Basketball Stars',
     description: 'Play one-on-one basketball matches using skill moves, dunks, and quick shots to outscore your opponent.',
-    url: 'https://basketball-stars.io/game/basketball-stars/',
+    url: 'https://frogiesarcade.win/stuff/selfhosted/basketball-stars/',
     image: 'https://frogiesarcade.win/stuff/games/basketball-stars.png'
   },
   {
     id: 'amongus',
     title: 'Among Us',
     description: 'Work together to complete tasks — but beware, an impostor is trying to sabotage everyone.',
-    url: 'https://amongusplay.online/',
+    url: 'https://stgames.top/unity/amongus/',
     image: 'https://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec'
   },
   {
@@ -345,14 +331,14 @@ var games = [
     id: 'bitlife',
     title: 'Bitlife',
     description: 'A life simulation game where your choices shape your character’s story from childhood to old age.',
-    url: 'https://bitlifefree.io/elife-simulator/',
+    url: 'https://theunblock3dlabs.github.io/sourced/play/bitlife/',
     image: 'https://d.newsweek.com/en/full/1317374/bitlife-ribbons-how-get-all-complete-list-android-ios-cheats-guide-tips-become.jpg?w=1600&h=1600&q=88&f=75befc746fb83a0c568c44ca07bc5e64'
   },
   {
     id: 'btd4',
     title: 'Bloons TD 4',
     description: 'Place monkey towers strategically to pop waves of balloons in this classic tower defense game.',
-    url: 'https://games.crazygames.com/en_US/bloons-tower-defense-4/index.html?isNewUser=false&v=1.350',
+    url: 'https://cdn2.addictinggames.com/addictinggames-content/ag-assets/content-items/html5-games/bloonstowerdefense4/index.html',
     image: 'https://assets-prd.ignimgs.com/2022/08/16/bloons-td4-button-1660612386362.jpg'
   },
   {
@@ -366,15 +352,8 @@ var games = [
     id: 'holeio',
     title: 'Hole.io',
     description: 'Control a growing black hole and swallow everything in sight to become the biggest in the arena.',
-    url: 'https://holeonline.io/hole-io.embed',
+    url: 'https://holeio.net/wp-content/uploads/2025/11/holeio.html',
     image: 'https://play-lh.googleusercontent.com/PTnoGeHV-bsIF79sW4IX4MzKAKaWj9fBWGvR4AOA4tmW0eYjPo3bVdpPYR7GGeX-0w'
-  },
-  {
-    id: 'penguinio',
-    title: "Penguin.io",
-    description: 'Bump rivals off the ice and stay alive as the arena gets chaotic in this multiplayer .io game.',
-    url: 'https://penguins-io.com/',
-    image: 'https://play-lh.googleusercontent.com/YsT4stD48fWw0XuIT87ilZtBfTkOGlxj3PpWI9qeFUkrvpu1xjemXzqf12DxBvv-Ikk'
   },
   {
     id: 'brawlguys',
@@ -401,4 +380,3 @@ if (customgames) customgames.forEach(game => {
 
 console.log("Loaded " + games.length + " games")
 if (customgames) console.log("Loaded " + customgames.length + " custom games")
-
