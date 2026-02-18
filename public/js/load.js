@@ -4,7 +4,7 @@ if (params.get("game")) {
     games.forEach(async game => {
         if (game.id != params.get("game")) return
 
-        document.title = `${game.title} | Art Class`
+        document.title = `${game.title} | Balf Games`
         document.querySelector("#gameImage").src = game.image
         document.querySelector("#gameTitle").innerHTML = game.title
         if (game.description) document.querySelector("#gameDescription").innerHTML = game.description
