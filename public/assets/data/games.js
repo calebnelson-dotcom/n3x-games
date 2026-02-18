@@ -296,7 +296,7 @@ var games = [
     id: 'amongus',
     title: 'Among Us',
     description: 'Work together to complete tasks — but beware, an impostor is trying to sabotage everyone.',
-    url: 'https://html5.gamemonetize.co/luye5rleios737wp2o9wjq7h577gl937/',
+    url: 'https://stgames.top/unity/amongus/',
     image: 'https://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec'
   },
   {
@@ -359,3 +359,4 @@ if (customgames) customgames.forEach(game => {
 
 console.log("Loaded " + games.length + " games")
 if (customgames) console.log("Loaded " + customgames.length + " custom games")
+
