@@ -92,7 +92,7 @@ function clearcustomgames() {
 if (localStorage.getItem('theme')) {
   document.body.setAttribute('theme', localStorage.getItem('theme'))
 } else {
-  document.body.setAttribute('theme', 'main')
+  document.body.setAttribute('theme', 'Default')
 }
 
 // Tab
