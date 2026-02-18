@@ -78,28 +78,7 @@ var apps = [
       'description': 'Please dont have any personal information or use a personal password on this website',
       'url': 'https://palyra.vercel.app',
       'image': 'https://palyra.vercel.app/assets/icon-gU33obAG.png'
-    },
-    {
-       id: "streamx",
-       title: "Streamx",
-       description: "make SURE to test all servers, vidcc works and refresh page if you get an error when clicking",
-       url: "https://streamex.net/",
-       image: "https://streamex.net/icon.png"
-  },
-    {
-       id: "series2watch",
-       title: "Series2watch",
-       description: "make SURE to test all servers, Megacloud works and refresh page if you get an error when clicking",
-       url: "https://series2watch.net/home",
-       image: "https://f.woowoowoowoo.net/xxrz/100x100/100/a9/57/a957cf2a9e280e09fc33b44ec5f9301c/a957cf2a9e280e09fc33b44ec5f9301c.png"
-  },
-    {
-       id: "vidplay",
-       title: "Vidplay",
-       description: "make SURE to test all servers, #3 works and refresh page if you get an error when clicking",
-       url: "https://vidplay.top/",
-       image: "https://vidplay.top/fav-512.png"
-  }
+    }
   ]
 
   var customapps = JSON.parse(localStorage.getItem("customapps"))
