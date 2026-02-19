@@ -13,6 +13,13 @@ var games = [
     image: 'assets/images/thatsnotmyneighbor.png'
   },
   {
+    id: 'crazykitty3d',
+    title: 'Crazy Kitty 3D',
+    description: 'crazy chicken but kitten.',
+    html: 'assets/games/crazykitty3d.html',
+    image: 'assets/images/crazykitty.png'
+  },
+  {
     id: 'crazychicken3d',
     title: 'Crazy Chicken 3d',
     description: 'crazy cattle but chicken.',
