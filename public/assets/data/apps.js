@@ -14,7 +14,8 @@ var apps = [
        id: 'helios',
        title: 'Helios Browser',
        html: 'assets/games/helios.html',
-       image: 'assets/images/helios.png'
+       image: 'assets/images/helios.png',
+       noProxy: true
     },
     {
        id: 'soundboard',
