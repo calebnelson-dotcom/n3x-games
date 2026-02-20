@@ -18,6 +18,13 @@ var apps = [
        noProxy: true
     },
     {
+       id: 'spencerflix',
+       title: 'Spen-Flix',
+       url: 'https://watch.spencerdevs.xyz/',
+       image: 'https://watch.spencerdevs.xyz/images/spenflix-logo.png',
+       noProxy: true
+    },
+    {
        id: 'soundboard',
        title: 'Soundboard',
        html: 'assets/games/Soundboard.html',
