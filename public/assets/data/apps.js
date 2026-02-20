@@ -25,6 +25,13 @@ var apps = [
        noProxy: true
     },
     {
+       id: 'pstream',
+       title: 'P-Stream',
+       url: 'https://pstream.mov/',
+       image: 'https://pstream.mov/apple-touch-icon.png?v=2',
+       noProxy: true
+    },
+    {
        id: 'soundboard',
        title: 'Soundboard',
        html: 'assets/games/Soundboard.html',
@@ -115,5 +122,3 @@ var apps = [
   
   console.log("Loaded " + apps.length + " apps")
   if (customapps) console.log("Loaded " + customapps.length + " custom apps")
-
-
