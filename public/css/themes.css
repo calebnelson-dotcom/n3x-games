@@ -1,0 +1,13 @@
+body[theme="main"] {
+    --text-color: white;
+
+    --background: linear-gradient(
+        135deg,
+        #3b0a3f 0%,   /* deep plum */
+        #5b1a6e 40%,  /* muted magenta */
+        #3c1361 100%  /* dark purple */
+    );
+
+    --navbar: #140a1a;
+    --accent: #d946ef;  /* softer pink accent */
+}
