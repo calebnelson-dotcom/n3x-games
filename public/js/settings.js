@@ -14,7 +14,7 @@ function setTab(name = document.querySelector('#tabname').value, icon = document
 
 }
 
-const defaultTheme = "main"; // 👈 change to whatever your default is
+const defaultTheme = "default"; // 👈 change to whatever your default is
 
 const savedTheme = localStorage.getItem("theme") || defaultTheme;
 
@@ -93,4 +93,5 @@ function setPanicUrl() {
     var url = document.querySelector("#panicurl")
     localStorage.setItem("panicurl", url.value)
 }
+
 
