@@ -20,20 +20,6 @@ var games = [
     image: 'assets/images/babysniperinvietnam.png'
   },
   {
-    id: 'crazykitty3d',
-    title: 'Crazy Kitty 3D',
-    description: 'crazy chicken but kitten.',
-    html: 'assets/games/crazykitty3d.html',
-    image: 'assets/images/crazykitty3d.png'
-  },
-  {
-    id: 'crazychicken3d',
-    title: 'Crazy Chicken 3d',
-    description: 'crazy cattle but chicken.',
-    html: 'assets/games/crazychicken3d.html',
-    image: 'https://cdn.jsdelivr.net/gh/gn-math/covers@main/255.png'
-  },
-  {
     id: 'dummiesworldcup',
     title: 'Dummies World Cup',
     description: 'Dummies World Cup is an engaging HTML5 ragdoll-physics soccer game developed by DoonDook and published by Playgama, featuring 32 national teams.',
