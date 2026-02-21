@@ -1,31 +1,3 @@
-/* =========================
-   DEFAULT THEME (no attribute)
-   ========================= */
-
-/* Used when no [theme] attribute is present */
-:root {
-    --text-color: white;
-
-    /* You can still keep this if you ever want to use it
-       on specific elements, but we won't apply it to body
-       so your square background stays visible. */
-    --background: linear-gradient(
-        135deg,
-        #3b0a3f 0%,
-        #5b1a6e 40%,
-        #3c1361 100%
-    );
-
-    --navbar: #140a1a;
-    --accent: #d946ef;
-}
-
-/* =========================
-   THEMED VARIANTS
-   Works on both <html> and <body>
-   ========================= */
-
-:root[theme="main"],
 body[theme="main"] {
     --text-color: white;
 
@@ -40,7 +12,6 @@ body[theme="main"] {
     --accent: #d946ef;
 }
 
-:root[theme="light"],
 body[theme="light"] {
     --text-color: #111;
 
@@ -53,43 +24,4 @@ body[theme="light"] {
 
     --navbar: #e5e7eb;
     --accent: #7c3aed;
-}
-
-/* =========================
-   APPLY VARIABLES GLOBALLY
-   (without overwriting your bg image)
-   ========================= */
-
-html,
-body {
-    min-height: 100%;
-    /* Do NOT set background here:
-       that would remove your square pattern.
-       If you want a fallback text color, keep this: */
-    color: var(--text-color);
-    transition: color 0.3s ease;
-}
-
-/* Sidebar uses themed navbar colour */
-.sidebar {
-    background: var(--navbar);
-}
-
-/* Buttons pick up accent colour */
-button,
-a.button,
-button.secondary,
-a.button.secondary {
-    background: var(--accent);
-    color: var(--text-color);
-    transition: 0.2s ease;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover,
-a.button:hover,
-button.secondary:hover,
-a.button.secondary:hover {
-    opacity: 0.9;
 }
