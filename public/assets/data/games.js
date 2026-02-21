@@ -90,13 +90,6 @@ var games = [
     image: 'assets/images/slimerancher.png'
   },
   {
-    id: 'ultrakill',
-    title: 'Ultrakill',
-    description: 'ULTRAKILL is a fast-paced, ultraviolent retro FPS blending Quake’s speed, Doom’s carnage, and Devil May Cry’s style.',
-    html: 'assets/games/ultrakill.html',
-    image: 'assets/images/ultrakill.png'
-  },
-  {
     id: 'buckshotroulette',
     title: 'Buckshhot Roulette',
     description: 'Play Russian roulette with a 12-gauge shotgun. Four enter. One leaves. Roll the dice with your life. Good luck!',
