@@ -30,7 +30,7 @@ var games = [
     id: 'crazychicken3d',
     title: 'Crazy Chicken 3d',
     description: 'crazy cattle but chicken.',
-    url: 'https://html-classic.itch.zone/html/13448030/crazychicken%20web%20port/index.html',
+    html: 'assets/games/crazychicken3d.html',
     image: 'https://cdn.jsdelivr.net/gh/gn-math/covers@main/255.png'
   },
   {
