@@ -79,7 +79,7 @@
     </nav>
 
     <div class="center-container">
-      <h1>Welcome to <span>Balf Games</span></h1>
+      <h1>Welcome to Balf Games</h1>
 
       <button onclick="window.location.href='https://forms.gle/ZBBpuZRX88qZVUAB7'" class="button play">
         Please report ANY issue here!
@@ -179,6 +179,15 @@
     from { transform: scale(0.95); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
   }
+
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+
+  .update-modal-backdrop.fade-out {
+    animation: fadeOut 0.25s ease forwards;
+  }
 </style>
 
 <div id="updateModalBackdrop" class="update-modal-backdrop">
@@ -210,13 +219,20 @@
 
     backdrop.style.display = "flex";
 
-    closeBtn.addEventListener("click", function () {
-      backdrop.style.display = "none";
-    });
+    function closeModal() {
+      backdrop.classList.add("fade-out");
+
+      setTimeout(() => {
+        backdrop.style.display = "none";
+        backdrop.classList.remove("fade-out");
+      }, 250);
+    }
+
+    closeBtn.addEventListener("click", closeModal);
 
     backdrop.addEventListener("click", function (e) {
       if (e.target === backdrop) {
-        backdrop.style.display = "none";
+        closeModal();
       }
     });
   });
