@@ -1,19 +1,32 @@
 function setTheme(theme) {
-    document.body.setAttribute("theme", theme)
-    localStorage.setItem("theme", theme)
+    document.body.setAttribute("theme", theme);
+    localStorage.setItem("theme", theme);
 }
 
-function setTab(name = document.querySelector('#tabname').value, icon = document.querySelector("#tabicon").value) {
-    localStorage.setItem("tabName", name)
-    localStorage.setItem("tabIcon", icon)
-
-    document.title = name
-    document.querySelector("link[rel='shortcut icon']").href = icon
-    if (localStorage.getItem("tabName")) document.querySelector("#tabname").value = localStorage.getItem("tabName")
-    if (localStorage.getItem("tabIcon")) document.querySelector("#tabicon").value = localStorage.getItem("tabIcon")
-
+// Called by the <select> onchange in settings.html
+function onThemeChange() {
+    const themeSelect = document.querySelector("#theme-select");
+    if (!themeSelect) return;
+    setTheme(themeSelect.value);
 }
 
+function setTab(
+    name = document.querySelector('#tabname').value,
+    icon = document.querySelector("#tabicon").value
+) {
+    localStorage.setItem("tabName", name);
+    localStorage.setItem("tabIcon", icon);
+
+    document.title = name;
+    document.querySelector("link[rel='shortcut icon']").href = icon;
+
+    if (localStorage.getItem("tabName")) {
+        document.querySelector("#tabname").value = localStorage.getItem("tabName");
+    }
+    if (localStorage.getItem("tabIcon")) {
+        document.querySelector("#tabicon").value = localStorage.getItem("tabIcon");
+    }
+}
 
 var tabPresets = {
     google: {
@@ -36,31 +49,36 @@ var tabPresets = {
         name: 'Balf Games',
         icon: '/assets/images/icon.png'
     }
-}
+};
 
 function setTabPreset(tab) {
-
-    setTab(tabPresets[tab].name, tabPresets[tab].icon)
-
+    setTab(tabPresets[tab].name, tabPresets[tab].icon);
 }
 
-if (localStorage.getItem("tabName")) document.querySelector("#tabname").value = localStorage.getItem("tabName")
-if (localStorage.getItem("tabIcon")) document.querySelector("#tabicon").value = localStorage.getItem("tabIcon")
-if (localStorage.getItem("theme")) document.querySelector("#theme-select").value = localStorage.getItem("theme")
+// Restore saved values into inputs
+if (localStorage.getItem("tabName")) {
+    document.querySelector("#tabname").value = localStorage.getItem("tabName");
+}
+if (localStorage.getItem("tabIcon")) {
+    document.querySelector("#tabicon").value = localStorage.getItem("tabIcon");
+}
 
-if (localStorage.getItem("panickey")) document.querySelector("#panickey").value = localStorage.getItem("panickey")
-if (localStorage.getItem("panicurl")) document.querySelector("#panicurl").value = localStorage.getItem("panicurl")
-
+if (localStorage.getItem("panickey")) {
+    document.querySelector("#panickey").value = localStorage.getItem("panickey");
+}
+if (localStorage.getItem("panicurl")) {
+    document.querySelector("#panicurl").value = localStorage.getItem("panicurl");
+}
 
 var detecting = false;
 function detectPanic() {
-    var key = document.querySelector("#panickey")
-    var button = document.querySelector("#panickeybtn")
-    button.disabled = true
-    button.innerHTML = "Press any key..."
+    var key = document.querySelector("#panickey");
+    var button = document.querySelector("#panickeybtn");
+    button.disabled = true;
+    button.innerHTML = "Press any key...";
 
-    detecting = true
-    document.addEventListener("keydown", detectPanicHandler)
+    detecting = true;
+    document.addEventListener("keydown", detectPanicHandler);
 
     function detectPanicHandler(e) {
         key.value = e.key;
@@ -69,32 +87,31 @@ function detectPanic() {
         button.disabled = false;
         detecting = false;
 
-        document.removeEventListener("keydown", detectPanicHandler)
+        document.removeEventListener("keydown", detectPanicHandler);
     }
-
 }
 
 function setPanicKey() {
-    var key = document.querySelector("#panickey")
-    localStorage.setItem("panickey", key.value)
+    var key = document.querySelector("#panickey");
+    localStorage.setItem("panickey", key.value);
 }
 
 function setPanicUrl() {
-    var url = document.querySelector("#panicurl")
-    localStorage.setItem("panicurl", url.value)
+    var url = document.querySelector("#panicurl");
+    localStorage.setItem("panicurl", url.value);
 }
 
+// ===== Theme initialization =====
 
 const defaultTheme = "main";
-
 const savedTheme = localStorage.getItem("theme") || defaultTheme;
 
-// Apply theme immediately
+// Apply theme immediately on page load
 document.body.setAttribute("theme", savedTheme);
-
-// Keep it saved
 localStorage.setItem("theme", savedTheme);
 
-// Sync the dropdown (if it exists)
+// Sync dropdown if it exists (only on settings page)
 const themeSelect = document.querySelector("#theme-select");
-if (themeSelect) themeSelect.value = savedTheme;
+if (themeSelect) {
+    themeSelect.value = savedTheme;
+}
