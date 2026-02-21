@@ -1,3 +1,8 @@
+/* ==============================
+   THEMES (Purple Unified)
+   ============================== */
+
+/* Main Theme (Purple) */
 body[theme="main"] {
     --text-color: white;
 
@@ -12,16 +17,17 @@ body[theme="main"] {
     --accent: #d946ef;
 }
 
+/* Light Theme (Now Also Purple to Prevent White Background on Mobile) */
 body[theme="light"] {
-    --text-color: #111;
+    --text-color: white;
 
     --background: linear-gradient(
         135deg,
-        #ffffff 0%,
-        #f3f4f6 50%,
-        #e5e7eb 100%
+        #3b0a3f 0%,
+        #5b1a6e 40%,
+        #3c1361 100%
     );
 
-    --navbar: #e5e7eb;
-    --accent: #7c3aed;
+    --navbar: #140a1a;
+    --accent: #d946ef;
 }
