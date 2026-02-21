@@ -21,17 +21,21 @@
 
 /* Normal body layout */
 body {
-  /* HARD-CODED PURPLE BACKGROUND */
-  background: linear-gradient(
-    135deg,
-    #3b0a3f 0%,
-    #5b1a6e 40%,
-    #3c1361 100%
-  ) !important;
+  /* Solid purple fallback so it works even if theme/vars fail */
+  background: #3b0a3f;
 
-  /* Text color */
-  color: #ffffff;
+  /* Use theme variable if available, otherwise stay purple */
+  background: var(
+    --background,
+    linear-gradient(
+      135deg,
+      #3b0a3f 0%,
+      #5b1a6e 40%,
+      #3c1361 100%
+    )
+  );
 
+  color: var(--text-color, #ffffff);
   min-height: 100vh;
   margin: 0;
   position: relative;
