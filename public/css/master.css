@@ -27,6 +27,7 @@ body {
   margin: 0;
   position: relative;
   text-align: center;
+
 }
 
 /* Moving grid background */
@@ -140,4 +141,83 @@ body::after{
   #constellationCanvas {
     opacity: 0.9;
   }
+}
+
+/* =========================
+   Custom cursors
+   ========================= */
+
+/* Default cursor (normal select) */
+body {
+  cursor: url("/assets/cursors/Normal-Select.cur"), auto;
+}
+
+/* Links and buttons (link select) */
+a,
+button,
+.button {
+  cursor: url("/assets/cursors/Link-Select.cur"), pointer;
+}
+
+/* Text inputs and editable areas (text select) */
+input[type="text"],
+input[type="search"],
+textarea,
+[contenteditable="true"] {
+  cursor: url("/assets/cursors/Text-Select.cur"), text;
+}
+
+/* Move / drag (apply .draggable to things you can drag) */
+.draggable {
+  cursor: url("/assets/cursors/Move.cur"), move;
+}
+
+/* Precision, e.g. canvas drawing tools */
+.precision {
+  cursor: url("/assets/cursors/Precision-Select.cur"), crosshair;
+}
+
+/* Help cursor */
+.help {
+  cursor: url("/assets/cursors/Help-Select.cur"), help;
+}
+
+/* Unavailable / disabled controls */
+.disabled,
+[disabled] {
+  cursor: url("/assets/cursors/Unavailable.cur"), not-allowed;
+}
+
+/* Horizontal resize (left-right) */
+.resize-x,
+.ew-resize {
+  cursor: url("/assets/cursors/Horizontal-Resize.cur"), ew-resize;
+}
+
+/* Vertical resize (up-down) */
+.resize-y,
+.ns-resize {
+  cursor: url("/assets/cursors/Vertical-Resize.cur"), ns-resize;
+}
+
+/* Diagonal resize (bottom-right / top-left) */
+.resize-diag-1,
+.nwse-resize {
+  cursor: url("/assets/cursors/diagonal-resize-1.cur"), nwse-resize;
+}
+
+/* Diagonal resize (bottom-left / top-right) */
+.resize-diag-2,
+.nesw-resize {
+  cursor: url("/assets/cursors/diagonal-resize-2.cur"), nesw-resize;
+}
+
+/* Alternate select example – maybe for special UI */
+.alt-select {
+  cursor: url("/assets/cursors/Alternate-Select.cur"), default;
+}
+
+/* Handwriting – for notes or signature fields */
+.handwriting {
+  cursor: url("/assets/cursors/Handwriting.cur"), text;
 }
