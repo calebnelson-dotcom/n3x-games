@@ -121,3 +121,15 @@ body::after{
 }
 
 
+
+@media (max-width: 900px) {   /* or whatever breakpoint you prefer, e.g. 768px or 700px */
+  body {
+    background: linear-gradient(135deg, #3b0a3f 0%, #5b1a6e 40%, #3c1361 100%) !important;
+  }
+
+  /* Also make sure overlays are still visible */
+  body::before,
+  body::after {
+    opacity: 0.7;   /* or even 0.85 if still too faint */
+  }
+}
