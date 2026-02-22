@@ -12,3 +12,7 @@ body[theme="dark"] {
     --navbar: #141414;
     --accent: #6b7280; ]
 }
+
+body[theme="dark"]::after {
+  content: none;
+}
