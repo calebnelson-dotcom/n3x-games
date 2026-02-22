@@ -1,7 +1,0 @@
-name = "balf-games"                     # must match your Pages project name exactly
-compatibility_date = "2026-02-22"
-compatibility_flags = [
-  "nodejs_compat",
-  # "enable_nodejs_http_server_modules"   # try adding this if you keep http.createServer style
-]
-pages_build_output_dir = "./public"       # optional if using Functions only for dynamic
