@@ -1,6 +1,7 @@
-name = "balf games"                  # Change to match your actual Pages project name in the dashboard
+name = "balf-games"                  # Change to match your actual Pages project name in the dashboard
 compatibility_date = "2026-02-22"       # Or use a recent date like today's
 main = "index.js"                       # Your entry point file
 
 
 compatibility_flags = ["nodejs_compat"]   # Critical! Enables Node.js APIs like http, express, etc.
+
