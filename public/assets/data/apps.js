@@ -5,24 +5,10 @@ var apps = [
       'image': 'assets/images/add.png'
     },
     {
-       id: 'poki',
-       title: 'Poki unblocked games',
-       url: 'https://poki.com/',
-       image: 'https://play-lh.googleusercontent.com/FBwBJqAv2KjTXRDRaEkrY3r2PJUWZbru1Y-6VyQY4Sku776mLJ2fIh1nMqzsmGdXUPI=w600-h300-pc0xffffff-pd',
-       noProxy: true
-    },
-    {
        id: 'helios',
        title: 'Helios Browser',
        html: 'assets/games/helios.html',
        image: 'assets/images/helios.png',
-       noProxy: true
-    },
-    {
-       id: 'pstream',
-       title: 'P-Stream',
-       url: 'https://p-stream.mov/',
-       image: 'https://pstream.mov/apple-touch-icon.png?v=2',
        noProxy: true
     },
     {
@@ -37,20 +23,6 @@ var apps = [
        title: 'Soundboard',
        html: 'assets/games/Soundboard.html',
        image: 'https://play-lh.googleusercontent.com/v_5LsSgLe8lMcmmKc1uYMPkaOkM3JVVkl_IvQ8m9iim5Z8Pw80MgvMyA_zc2QvVs6zA=w240-h480-rw'
-    },
-    {
-       id: 'crazygames',
-       title: 'Crazygames unblocked games',
-       url: 'https://www.crazygames.com/',
-       image: 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Crazygames_jpg_logo.jpg',
-       noProxy: true
-    },
-    {
-      'id': 'neal',
-      'title': 'Neal.fun',
-      'description': 'some games',
-      'url': 'https://neal.fun',
-      'image': 'https://images.seeklogo.com/logo-png/52/1/neal-fun-logo-png_seeklogo-528485.png'
     },
     {
       "id": "google",
