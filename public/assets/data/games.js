@@ -2,7 +2,6 @@ var games = [
   {
     id: 'customgame',
     title: 'Add custom game',
-    description: 'Add your own custom game by entering a title, image, and URL to expand your personal game library.',
     image: 'assets/images/add.png'
   },
   {
@@ -18,6 +17,13 @@ var games = [
     description: 'bru waht is this bruuu.',
     html: 'assets/games/babysniperinvietnam.html',
     image: 'assets/images/babysniperinvietnam.png'
+  },
+  {
+    id: 'untitledgoosegame',
+    title: 'Untitled goose game',
+    description: 'goose',
+    html: 'assets/games/ugg.html',
+    image: 'assets/images/ugg.png'
   },
   {
     id: 'dummiesworldcup',
