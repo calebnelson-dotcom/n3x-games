@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png" />
+    <title>Balf Games</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/themes.css" />
+    <link rel="stylesheet" href="./css/master.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+
+    <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+
+    <meta name="theme-color" content="#3b0a3f">
+  </head>
+
+  <body theme="main">
+
+    <canvas id="constellationCanvas"></canvas>
+
+    <!-- Sidebar Toggle -->
+    <input type="checkbox" id="navToggle" class="nav-toggle" />
+
+    <!-- =========================
+         SIDEBAR
+         ========================= -->
+    <nav class="sidebar">
+      <label for="navToggle" class="sidebar-edge" aria-label="Toggle sidebar"></label>
+
+      <div class="logo">
+        <a href="/">
+          <img src="./assets/images/icon.png" alt="Balf Games Logo" draggable="false" class="logo-img" />
+        </a>
+      </div>
+
+      <p id="time"></p>
+
+      <div class="navitems">
+        <div class="navitem">
+          <a selected href="/">
+            <img src="./assets/images/home.png" alt="Home" draggable="false" />
+            <span class="nav-label">Home</span>
+          </a>
+        </div>
+
+        <div class="navitem">
+          <a href="/maths.html">
+            <img src="./assets/images/games.png" alt="Games" draggable="false" />
+            <span class="nav-label">Games</span>
+          </a>
+        </div>
+
+        <div class="navitem">
+          <a href="/apps.html">
+            <img src="./assets/images/apps.png" alt="Apps" draggable="false" />
+            <span class="nav-label">Apps</span>
+          </a>
+        </div>
+
+        <div class="navitem">
+          <a href="/emulator.html">
+            <img src="./assets/images/emulator.png" alt="Emulator" draggable="false" />
+            <span class="nav-label">Emulator</span>
+          </a>
+        </div>
+
+        <div class="navitem">
+          <a href="/search.html">
+            <img src="./assets/images/search.png" alt="Search" draggable="false" />
+            <span class="nav-label">Search</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =========================
+         MAIN THEME HOMEPAGE
+         ========================= -->
+    <div class="center-container main-home">
+      <h1>Welcome to Balf Games</h1>
+
+      <button onclick="window.location.href='https://forms.gle/ZBBpuZRX88qZVUAB7'" class="button play">
+        Please report ANY issue here!
+      </button>
+
+      <button onclick="launchab()" id="launchab" class="button play">
+        Launch in about:blank
+      </button>
+
+      <div class="bottom-links">
+        <a href="./settings.html" class="button secondary">Settings</a>
+        <a href="./about.html" class="button secondary">About</a>
+      </div>
+    </div>
+
+    <!-- =========================
+         DARK THEME HOMEPAGE
+         ========================= -->
+    <div class="dark-home">
+      <h1 class="dark-title">balf games</h1>
+      <p class="dark-subtitle">pure vibecoded</p>
+
+      <div class="dark-search-wrap">
+        <input
+          type="text"
+          id="darkSearch"
+          class="dark-search"
+          placeholder="search anything..."
+          autocomplete="off"
+        />
+      </div>
+
+      <!-- Dark theme still keeps access to settings/about -->
+      <div class="bottom-links" style="margin-top:20px;">
+        <a href="./settings.html" class="button secondary">Settings</a>
+        <a href="./about.html" class="button secondary">About</a>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="./js/index.js"></script>
+    <script src="./js/constellations.js"></script>
+
+    <!-- Dark homepage search redirect -->
+    <script>
+      const darkSearch = document.getElementById("darkSearch");
+      if (darkSearch) {
+        darkSearch.addEventListener("keydown", function (e) {
+          if (e.key === "Enter") {
+            const q = darkSearch.value.trim();
+            if (!q) return;
+            window.location.href = "/search.html?q=" + encodeURIComponent(q);
+          }
+        });
+      }
+
+      aclib.runAutoTag({ zoneId: "6hmeyutild" });
+    </script>
+
+  </body>
+</html>
