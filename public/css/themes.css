@@ -1,0 +1,104 @@
+/* =========================================
+   MAIN (DEFAULT) THEME
+   ========================================= */
+
+body[theme="main"] {
+  --text-color: white;
+  --background: linear-gradient(135deg, #3b0a3f 0%, #5b1a6e 40%, #3c1361 100%);
+  --navbar: #140a1a;
+  --accent: #d946ef;
+}
+
+
+/* =========================================
+   DARK THEME
+   ========================================= */
+
+body[theme="dark"] {
+  --text-color: #e5e5e5;
+  --background: linear-gradient(135deg, #0f0f0f 0%, #161616 40%, #0a0a0a 100%);
+  --navbar: #0a0a0a;
+  --accent: #6b7280;
+}
+
+
+/* =========================================
+   HOMEPAGE LAYOUT SWITCHING
+   ========================================= */
+
+/* Show normal home by default */
+.main-home {
+  display: block;
+}
+
+/* Hide dark home by default */
+.dark-home {
+  display: none;
+}
+
+/* When dark theme is active */
+body[theme="dark"] .main-home {
+  display: none;
+}
+
+body[theme="dark"] .dark-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  width: min(800px, 90%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* =========================================
+   DARK HOME STYLING (INFAMOUS STYLE)
+   ========================================= */
+
+body[theme="dark"] .dark-title {
+  font-size: 72px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  margin-bottom: 6px;
+}
+
+body[theme="dark"] .dark-subtitle {
+  font-size: 15px;
+  opacity: 0.75;
+  margin-bottom: 26px;
+}
+
+body[theme="dark"] .dark-search-wrap {
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+body[theme="dark"] .dark-search {
+  width: 100%;
+  max-width: 720px;
+  height: 60px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(0, 0, 0, 0.45);
+  color: #e5e5e5;
+  font-size: 18px;
+  padding: 0 24px;
+  outline: none;
+  margin: 0 auto;
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: 0.25s ease;
+}
+
+body[theme="dark"] .dark-search:focus {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(0, 0, 0, 0.65);
+}
+
+body[theme="dark"] .dark-search::placeholder {
+  color: rgba(229, 231, 235, 0.5);
+}
+
