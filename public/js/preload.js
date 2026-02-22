@@ -1,5 +1,7 @@
 // Any scripts that need to be preloaded in advance, like ads or analytics
-
+if (localStorage.getItem("performanceMode") === "true") {
+  document.documentElement.classList.add("performance-mode");
+}
 // 🔒 If running inside an iframe, skip service worker logic entirely
 const isIframe = window.self !== window.top;
 
@@ -65,17 +67,3 @@ hover.href =
   'https://cdn.jsdelivr.net/gh/ianlunn/hover/css/hover-min.css';
 hover.rel = 'stylesheet';
 document.head.appendChild(hover);
-
-// Google Analytics
-const googleAnalytics = document.createElement('script');
-googleAnalytics.src =
-  'https://www.googletagmanager.com/gtag/js?id=G-66ZE075DLD';
-googleAnalytics.async = true;
-document.head.appendChild(googleAnalytics);
-
-window.dataLayer = window.dataLayer || [];
-function gtag() {
-  dataLayer.push(arguments);
-}
-gtag('js', new Date());
-gtag('config', 'G-66ZE075DLD');
