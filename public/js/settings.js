@@ -95,3 +95,16 @@ function setSiteKey() {
   localStorage.setItem("siteKey", key);
   alert("Site key updated!");
 }
+
+const perfToggle = document.getElementById("performanceToggle");
+
+// Load saved state
+if (localStorage.getItem("performanceMode") === "true") {
+  perfToggle.checked = true;
+}
+
+// Save when changed
+perfToggle.addEventListener("change", () => {
+  localStorage.setItem("performanceMode", perfToggle.checked);
+  location.reload(); // reload to apply instantly
+});
