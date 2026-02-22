@@ -74,24 +74,6 @@
       line-height: 1.6;
       opacity: 0.95;
     }
-
-    #gamePopupFooter {
-      margin-top: 14px;
-      font-size: 13px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      opacity: 0.9;
-    }
-
-    #gamePopupFooter input {
-      accent-color: #c084fc;
-      cursor: pointer;
-    }
-
-    #gamePopupFooter label {
-      cursor: pointer;
-    }
   </style>
 </head>
 
@@ -104,18 +86,11 @@
       <div class="closeBtn" onclick="closeGamePopup()">✕</div>
     </div>
 
-    <div id="gamePopup">
-  <div id="gamePopupHeader">
-    <span>💜 Game not loading or showing a blank screen?</span>
-    <div class="closeBtn" onclick="closeGamePopup()">✕</div>
+    <div id="gamePopupContent">
+      Click the <strong>fullscreen icon</strong> on the right — this opens it on the entire screen.
+      You can also try refreshing the page. Be patient, maybe that will fix it.
+    </div>
   </div>
-
-  <div id="gamePopupContent">
-    Click the <strong>fullscreen icon</strong> on the right — this opens it on the entire screen.
-    You can also try refreshing the page. Be patient, maybe that will fix it.
-    Also try performance-mode in settings if games are lagging!
-  </div>
-</div>
 
   <canvas id="constellationCanvas"></canvas>
 
@@ -189,23 +164,15 @@
   <script src="./js/games.js"></script>
   <script src="./js/constellations.js"></script>
 
-
   <script>
     function closeGamePopup() {
-      if (document.getElementById("dontShowGamePopup").checked) {
-        localStorage.setItem("hideGamePopup", "true");
-      }
       document.getElementById("gamePopup").classList.remove("show");
     }
 
     window.addEventListener("load", function () {
-      if (!localStorage.getItem("hideGamePopup")) {
-        document.getElementById("gamePopup").classList.add("show");
-      }
+      document.getElementById("gamePopup").classList.add("show");
     });
   </script>
 
 </body>
 </html>
-
-
