@@ -1,0 +1,23 @@
+{
+  "name": "balf games",
+  "version": "1.0.0",
+  "description": "top 1 game site",
+  "type": "module",
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "dependencies": {
+    "@titaniumnetwork-dev/ultraviolet": "^2.0.0",
+    "@tomphttp/bare-server-node": "^2.0.2",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "eslint": "^10.0.0",
+    "prettier": "^2.8.4"
+  }
+}
