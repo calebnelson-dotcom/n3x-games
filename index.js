@@ -76,6 +76,37 @@ function shutdown() {
   process.exit(0);
 }
 
-server.listen({
-  port,
-});
+// functions/[[path]].js   ← or rename to your entry if using Workers
+
+import { createBareServer } from '@tomphttp/bare-server-node';
+// Note: standard bare-server-node may still fail → consider switching to Worker port later
+
+const bare = createBareServer("/bare/");
+
+export async function onRequest(context) {
+  const { request } = context;
+
+  // Let bare-server handle its routes first
+  if (bare.shouldRoute(request)) {
+    // bare.routeRequest expects Node Request/Response → needs adaptation
+    // This is where it gets tricky → see notes below
+    return new Response("Bare routing not fully adapted yet", { status: 501 });
+  }
+
+  // Otherwise serve static assets (Pages does this automatically for /public/*)
+  // If you need custom logic:
+  const url = new URL(request.url);
+
+  if (url.pathname.startsWith("/uv/")) {
+    // You'd need to fetch from uvPath, but better to copy UV files into /public/uv/
+    // and let Pages serve them statically
+  }
+
+  // Fallback: serve from static or 404
+  return fetch(request);   // Pages will handle static serving
+}
+
+// If using full Worker mode (not Pages Functions), use:
+// export default {
+//   async fetch(request, env, ctx) { ... same body as above ... }
+// };
