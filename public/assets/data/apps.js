@@ -69,12 +69,6 @@ var apps = [
       'image': 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/YouTube_social_red_square_%282017%29.svg/2048px-YouTube_social_red_square_%282017%29.svg.png'
     },
     {
-      'id': 'spotify',
-      'title': 'Spotify',
-      'url': 'https://open.spotify.com/browse',
-      'image': 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/1982px-Spotify_icon.svg.png'
-    },
-    {
       'id': 'chess',
       'title': 'Chess.com',
       'url': 'https://chess.com',
@@ -96,4 +90,5 @@ var apps = [
   
   console.log("Loaded " + apps.length + " apps")
   if (customapps) console.log("Loaded " + customapps.length + " custom apps")
+
 
