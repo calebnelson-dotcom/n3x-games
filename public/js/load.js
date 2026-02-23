@@ -31,36 +31,7 @@ function setFrameForItem(item, frame) {
     }
 }
 
-if (params.get("game")) {
-    games.forEach(async game => {
-        if (game.id != params.get("game")) return;
 
-        document.title = `${game.title} | Balf Games`;
-        document.querySelector("#gameImage").src = game.image;
-        document.querySelector("#gameTitle").innerHTML = game.title;
-        if (game.description) {
-            document.querySelector("#gameDescription").innerHTML = game.description;
-        }
-
-        const frame = document.querySelector("#frame");
-        setFrameForItem(game, frame);
-    });
-} else if (params.get("app")) {
-
-    apps.forEach(app => {
-        if (app.id != params.get("app")) return;
-
-        document.title = `${app.title} | Balf Games`;
-        document.querySelector("#gameImage").src = app.image;
-        document.querySelector("#gameTitle").innerHTML = app.title;
-        if (app.description) {
-            document.querySelector("#gameDescription").innerHTML = app.description;
-        }
-
-        const frame = document.querySelector("#frame");
-        setFrameForItem(app, frame);
-    });
-}
 
 if (!getObj("favoritedGames")) setObj("favoritedGames", []);
 if (!getObj("favoritedApps")) setObj("favoritedApps", []);
@@ -103,4 +74,5 @@ function favorite() {
         }
         setObj("favoritedApps", favoritedApps);
     }
+
 }
