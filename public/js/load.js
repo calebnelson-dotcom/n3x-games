@@ -35,7 +35,7 @@ if (params.get("game")) {
     games.forEach(async game => {
         if (game.id != params.get("game")) return;
 
-        document.title = `${game.title} | Balf Games`;
+        document.title = cloak;
         document.querySelector("#gameImage").src = game.image;
         document.querySelector("#gameTitle").innerHTML = game.title;
         if (game.description) {
@@ -104,4 +104,5 @@ function favorite() {
         setObj("favoritedApps", favoritedApps);
     }
 }
+
 
