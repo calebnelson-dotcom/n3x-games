@@ -486,6 +486,13 @@ var games = [
     description: 'why.',
     url: 'https://gamingshitposting.github.io/ext-bin-1/games/DDLC-1.1.1-web/index.html',
     image: 'https://upload.wikimedia.org/wikipedia/en/7/7c/Doki_Doki_Literature_Club_Cover.jpg'
+  },
+  {
+    id: 'blackjack',
+    title: 'black jack',
+    description: 'just play.',
+    html: 'assets/games/clblackjackhhhh.html',
+    image: 'https://t3.ftcdn.net/jpg/02/60/89/06/240_F_260890669_XS3PAOvLc0sAPQe2aaATZQP04D09sXBG.jpg'
   }
 ]
 games.sort(function (a, b) {
@@ -505,3 +512,4 @@ if (customgames) customgames.forEach(game => {
 
 console.log("Loaded " + games.length + " games")
 if (customgames) console.log("Loaded " + customgames.length + " custom games")
+
