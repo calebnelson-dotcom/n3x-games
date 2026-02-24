@@ -243,11 +243,11 @@ var games = [
     image: 'https://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec'
   },
   {
-    id: 'blackjack',
-    title: 'black jack'
-    description: 'bro just play some black jack.',
-    html: 'assets/games/clblackjackhhhh.html',
-    image: 'assets/images/blackjack.jpeg',
+    id: 'baldisbasics',
+    title: 'Baldi\'s Basics',
+    description: 'A horror-comedy school game where you solve math problems and avoid Baldi roaming the halls.',
+    html: 'assets/games/baldisbasics.html',
+    image: 'https://frogiesarcade.win/stuff/games/baldi.png',
   },
   {
     id: 'papaburgers',
@@ -505,4 +505,3 @@ if (customgames) customgames.forEach(game => {
 
 console.log("Loaded " + games.length + " games")
 if (customgames) console.log("Loaded " + customgames.length + " custom games")
-
